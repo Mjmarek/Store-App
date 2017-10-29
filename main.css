@@ -64,15 +64,7 @@ h1 {
 	margin: 0px;
 }
 
-/*h2 {
-	font-family: 'xiomararegular';
-	font-weight:normal;
-	color: green;
-	font-size: 6.0em;
-	margin: 0px;
-}*/
-
-h4 {
+h3 {
 	font-family: 'xiomararegular';
 	font-weight:normal;
 	font-style:normal;
@@ -85,8 +77,6 @@ h4 {
 nav {
 	color: #dcdfe5;
 	font-size: 1.7em;
-	padding: 1.0em 1.0em 0.5em;
-	margin: 1.0em 0px;
 }
 
 nav ul {
@@ -126,7 +116,7 @@ nav li a:hover {
 	border-left: black solid 5px;
 }
 
-h3 {
+h2 {
 	font-family: 'xiomararegular';
 	font-weight:normal;
 	font-style:normal;
@@ -144,6 +134,10 @@ p {
 	margin: 0px 0.5em 0.75em 0px;
 }
 
+#socialMedia {
+	padding-right: 13px;
+}
+
 #main {
 	width: calc(100% - 500px);
 	background-color: pink;
@@ -153,7 +147,7 @@ p {
 	border-radius: 2em;
 }
 
-section div.photoFrame {
+.photoFrame {
 	position: relative;
 	width: 250px;
 	padding: 1.0em;
@@ -164,19 +158,13 @@ section div.photoFrame {
 	border-radius: 0.6em; 
 }
 
-h5 {
+h4 {
 	font-family: Arial;
 	font-weight: normal;
 	color: white;
 	font-size: 2.0em;
 	padding: 0px;
 	margin: 0.5em 0px 0.5em 0px;
-}
-
-/*Research*/
-div.clear {
-	clear:both;
-	font-size: 1%;
 }
 
 footer {
@@ -187,7 +175,7 @@ footer {
 	text-align: center;
 }
 
-footer ul#menufooter {
+#menufooter {
 	display: inline-block;
 	margin: 0px 0px 0px 0.6em;
 	padding: 0px;
