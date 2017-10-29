@@ -1,64 +1,43 @@
-/*Change background image to #4286f4*/
-/*Research webkit etc*/
 html {
-	background: url('store_images/backgroundCropBlue.jpg') 
-    no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	background: url('store_images/backgroundCropBlue.jpg')
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
-
-/*Change font to Xiorama
-body {
-	font-size: 67.5%;
-	font-family: Tahoma, Geneva, sans-serif;
-}*/
 
 @font-face {
 	font-family: 'xiomararegular';
-    src: url('store_font/xiomara-script-webfont.woff2') format('woff2'),
-         url('store_font/xiomara-script-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  src: url('store_font/xiomara-script-webfont.woff2') format('woff2'),
+  	url('store_font/xiomara-script-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1 {
-	font-family: 'xiomararegular';
-	font-weight:normal;
-	font-style:normal;
-	color: #092f6d;
-	font-size: 2,0em;
-	padding: 0px;
-	margin: 0.5em 0px 0.5em 0px;
-}
-
-h2 {
-	color: white;
-	font-size: 1.7em;
-	padding: 0px;
-	margin: 0.5em 0px 0.35em 0px;
-}
-
-p {
-	font-size: 1.2em;
-	/*not sure what this refers to*/
-	line-height: 1.4em;
-	color: black;
-	padding: 0px;
-	margin: 0px 0.5em 0.75em 0px;
-}
-
-/*Research what ol refers to*/
-ol {
-	font-size: 1.2em;
-	padding: 0px 0px 0px 1.0em;
-	margin: 0px 0px 0px 1.0em;
-}
-
-ol li {
-	padding: 0px 0px 0.2em;
+#utilityMenu {
+	font-family: Arial;
+	font-size: 1.0em;
+	background-color: white;
+	position: absolute;	
+	padding: 0.35em;
 	margin: 0px;
+	right: 0px;	
+}
+
+#utilityMenu li {
+	padding: 0px 0.25em 0px 0.2em;
+	vertical-align: middle;
+}
+
+#utilityMenu ul li.acctNav a,
+	#utilityMenu ul li.acctNav a:visited {
+	color: blue;	
+	display: inline-block;
+	height: 1.3em;
+	padding: 0.5em;
+	margin: -0.4em 0px 0px 0px;
+	font-size: 0.8em;
 }
 
 a, a:visited {
@@ -69,46 +48,38 @@ a:hover {
 	color: #aac7f7;
 }
 
-hr {
-	padding: 0px;
-	margin: 1.5em 1.5em 0.75em 0.5em;
+#brand {
+	display: flex;
 }
 
-.contentWrapper {
-	padding: 0px 3.0em;
-	margin: 0 auto;
-	max-width: 1170px;	
+#logo, h1 {
+	display: inline-block;
 }
 
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-/*Fix logo image (no repeat/align left)*/
-header {
-	padding: 2.5em 0px 0.5em;
-	margin: 0px 0px 2.0em;
-	background: url('store_images/logo.jpg') left 0px;
-}
-
-/*Check shadow off-set*/
-header h1 {
-	color: blue;
-	font-size: 7.5em;
+h1 {
+	font-family: 'xiomararegular';
+	font-weight:normal;
+	color: #092f6d;
+	font-size: 8.0em;
 	margin: 0px;
-	/*text-shadow: 1px 2px 0px ##535c6b;
-		offset-x | offset-y | blur-radius | color*/
 }
 
-header h2 {
-	font-weight: 300;
-	font-size: 3.8em;
-	color: #535c6b;
-	margin: -0.4em 0px 0px 1.0em;
+/*h2 {
+	font-family: 'xiomararegular';
+	font-weight:normal;
+	color: green;
+	font-size: 6.0em;
+	margin: 0px;
+}*/
+
+h4 {
+	font-family: 'xiomararegular';
+	font-weight:normal;
+	font-style:normal;
+	color: red;
+	font-size: 2.0em;
+	padding: 0px;
+	margin: 0.5em 0px 0.5em 0px;
 }
 
 nav {
@@ -118,7 +89,6 @@ nav {
 	margin: 1.0em 0px;
 }
 
-/*Check all nav features*/
 nav ul {
 	padding: 0px;
 	margin: 0px;
@@ -138,85 +108,69 @@ nav li a:hover {
 	color: #aac7f7;	
 }
 
-nav#utilityMenu {
-	float: right;
-	margin: -1.5em 0px 0px 0px;
-	padding: 0.35em;
+.contentWrapper {
+	display: flex;
+	padding: 0px 3.0em;
+	margin: 0 auto;
+	max-width: 1170px;	
+}
+
+#sidebar {
+	width: 325px;
+	height: fit-content;
+	font-family: Arial;
+	display: inline-block;
 	background-color: white;
-	height: 1.3em;
-}
-
-nav#utilityMenu li {
-	padding: 0px 0.25em 0px 0.2em;
-	vertical-align: middle;
-}
-
-/*Research*/
-nav#utilityMenu ul li.acctNav a,
-	nav#utilityMenu ul li.acctNav a:visited {
-		color: blue;	
-		display: inline-block;
-		height: 1.3em;
-		padding: 0.5em;
-		margin: -0.4em 0px 0px 0px;
-		font-size: 0.8em;
-}
-
-nav#utilityMenu ul li.acctNav a.active {
-	background color: white;
-}
-
-nav#utilityMenu ul li.acctNav a:hover {
-	background color: grey;
-	color: #aac7f7;
-}
-
-nav#utilityMenu li a,
-	nav#utilityMenu li a:visited { padding: 0px; }
-nav#utilityMenu li a:hover { background-color: transparent; }
-nav#utilityMenu ul li input#search {
-	vertical-align: middle;
-	margin: 0px 0px 0px 1.0em;
-}
-
-nav#utilityMenu ul li.acctNav::before,
-	nav#utilityMenu ul li input#search::before {
-		content: "| ";
-		color: purple;
-	}
-
-section#sidebar {
-	width: 238px;
-	float: left;
-	position: relative;
-	display: block;
-	background color: aqua;
+	padding: 0.5em 0.5em 0.5em 1.5em;
 	margin: 1.5em 0px 3.0em 1.5em;
-	padding: 1.7em 0.5em 2.0em 1.7em;
-	border-left: teal solid 5px;
+	border-left: black solid 5px;
 }
 
-section: #main {
+h3 {
+	font-family: 'xiomararegular';
+	font-weight:normal;
+	font-style:normal;
+	color: purple;
+	font-size: 1.8em;
+	padding: 0px;
+	margin: 0.5em 0px 0.5em 0px;
+}
+
+p {
+	font-size: 1.0em;
+	line-height: 1.4em;
+	color: black;
+	padding: 0px;
+	margin: 0px 0.5em 0.75em 0px;
+}
+
+#main {
+	width: calc(100% - 500px);
 	background-color: pink;
-	margin: 0px 0px 2.0em;
+	margin: 25px 0px 25px 2.0em;
 	padding: 1.5em 0px 2.0em 1.5em;
 	display: inline-block;
 	border-radius: 2em;
 }
 
 section div.photoFrame {
-	float: right;
 	position: relative;
 	width: 250px;
 	padding: 1.0em;
 	margin: 0px 0.5em 2.0em 0.5em;
 	background-color: darkblue;
+	display: inline-block;
 	border: white solid 1px;
 	border-radius: 0.6em; 
 }
 
-section div.photoFrame {
-	width: 20%;
+h5 {
+	font-family: Arial;
+	font-weight: normal;
+	color: white;
+	font-size: 2.0em;
+	padding: 0px;
+	margin: 0.5em 0px 0.5em 0px;
 }
 
 /*Research*/
@@ -227,12 +181,10 @@ div.clear {
 
 footer {
 	background-color: white;
-	height: 25px;
 	font-size: 1.2em;
-	color: purple;
+	color: black;
 	width: 100%;
 	text-align: center;
-	padding: 1.5em 2.0em;
 }
 
 footer ul#menufooter {
@@ -248,7 +200,6 @@ footer ul li {
 }
 
 footer ul li::before {
-	content: "| ";
 	padding-right: 0.7em;
 }
 
