@@ -15,6 +15,11 @@ html {
   font-style: normal;
 }
 
+#headerAlign {
+	padding-left: 48px;
+	max-width: 1170px;
+}
+
 #utilityMenu {
 	font-family: Arial;
 	font-size: 1.0em;
@@ -61,22 +66,18 @@ h1 {
 	font-weight:normal;
 	color: #092f6d;
 	font-size: 8.0em;
+	text-shadow: white 3px 6px;
 	margin: 0px;
 }
 
-h3 {
+nav {
 	font-family: 'xiomararegular';
 	font-weight:normal;
-	font-style:normal;
-	color: red;
-	font-size: 2.0em;
-	padding: 0px;
-	margin: 0.5em 0px 0.5em 0px;
-}
-
-nav {
-	color: #dcdfe5;
+	color: purple;
 	font-size: 1.7em;
+	background-color: white;
+	border: black solid 4px;
+	margin-top: 26px;
 }
 
 nav ul {
@@ -92,6 +93,7 @@ nav li {
 nav li a, nav li a:visited {
 	color: blue;
 	padding: 0.3em 0.6em;
+	text-decoration: none;
 }
 
 nav li a:hover {
@@ -100,20 +102,19 @@ nav li a:hover {
 
 .contentWrapper {
 	display: flex;
-	padding: 0px 3.0em;
-	margin: 0 auto;
+	padding-left: 48px;
 	max-width: 1170px;	
 }
 
 #sidebar {
-	width: 325px;
+	width: 805px;
 	height: fit-content;
 	font-family: Arial;
 	display: inline-block;
 	background-color: white;
 	padding: 0.5em 0.5em 0.5em 1.5em;
-	margin: 1.5em 0px 3.0em 1.5em;
-	border-left: black solid 5px;
+	margin: 1.5em 0px 3.0em 0px;
+	border: black solid 4px;
 }
 
 h2 {
@@ -139,23 +140,33 @@ p {
 }
 
 #main {
-	width: calc(100% - 500px);
-	background-color: pink;
+	background-color: #6c90cc;
+	border: black solid 4px;
 	margin: 25px 0px 25px 2.0em;
-	padding: 1.5em 0px 2.0em 1.5em;
+	padding: 1.0em 0px 2.0em 1.5em;
 	display: inline-block;
-	border-radius: 2em;
+}
+
+h3 {
+	font-family: 'xiomararegular';
+	font-weight:normal;
+	font-style:normal;
+	color: purple;
+	font-size: 2.0em;
+	margin: 0em 0px 0.5em 0px;
+}
+
+#photos{
+	margin-left:61px;
 }
 
 .photoFrame {
-	position: relative;
 	width: 250px;
 	padding: 1.0em;
 	margin: 0px 0.5em 2.0em 0.5em;
 	background-color: darkblue;
 	display: inline-block;
-	border: white solid 1px;
-	border-radius: 0.6em; 
+	border: black solid 2px;
 }
 
 h4 {
