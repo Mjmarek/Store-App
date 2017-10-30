@@ -64,7 +64,7 @@ a:hover {
 h1 {
 	font-family: 'xiomararegular';
 	font-weight:normal;
-	color: #092f6d;
+	color: #102f63;
 	font-size: 8.0em;
 	text-shadow: white 3px 6px;
 	margin: 0px;
@@ -73,9 +73,9 @@ h1 {
 nav {
 	font-family: 'xiomararegular';
 	font-weight:normal;
-	color: purple;
+	color: #1354c1;
 	font-size: 1.7em;
-	background-color: white;
+	background-color: #c9d7ef;
 	border: black solid 4px;
 	margin-top: 26px;
 }
@@ -91,7 +91,7 @@ nav li {
 }
 
 nav li a, nav li a:visited {
-	color: blue;
+	color: #1354c1;
 	padding: 0.3em 0.6em;
 	text-decoration: none;
 }
@@ -107,11 +107,11 @@ nav li a:hover {
 }
 
 #sidebar {
-	width: 805px;
+	width: 820px;
 	height: fit-content;
 	font-family: Arial;
 	display: inline-block;
-	background-color: white;
+	background-color: #c9d7ef;
 	padding: 0.5em 0.5em 0.5em 1.5em;
 	margin: 1.5em 0px 3.0em 0px;
 	border: black solid 4px;
@@ -121,7 +121,7 @@ h2 {
 	font-family: 'xiomararegular';
 	font-weight:normal;
 	font-style:normal;
-	color: purple;
+	color: #1354c1;
 	font-size: 1.8em;
 	padding: 0px;
 	margin: 0.5em 0px 0.5em 0px;
@@ -140,7 +140,7 @@ p {
 }
 
 #main {
-	background-color: #6c90cc;
+	background-color: #c9d7ef;
 	border: black solid 4px;
 	margin: 25px 0px 25px 2.0em;
 	padding: 1.0em 0px 2.0em 1.5em;
@@ -151,7 +151,7 @@ h3 {
 	font-family: 'xiomararegular';
 	font-weight:normal;
 	font-style:normal;
-	color: purple;
+	color: #1354c1;
 	font-size: 2.0em;
 	margin: 0em 0px 0.5em 0px;
 }
@@ -164,16 +164,16 @@ h3 {
 	width: 250px;
 	padding: 1.0em;
 	margin: 0px 0.5em 2.0em 0.5em;
-	background-color: darkblue;
+	background-color: #1b3d77;
 	display: inline-block;
-	border: black solid 2px;
+	border: black solid 4px;
 }
 
 h4 {
 	font-family: Arial;
 	font-weight: normal;
 	color: white;
-	font-size: 2.0em;
+	font-size: 1.5em;
 	padding: 0px;
 	margin: 0.5em 0px 0.5em 0px;
 }
